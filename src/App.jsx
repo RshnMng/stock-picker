@@ -45,27 +45,40 @@ function App() {
   }
 
   function getDates() {
-    const currentDate = new Date();
-    const day = currentDate.getDate() - 1;
-    const month = currentDate.getMonth() + 1;
-    const year = currentDate.getFullYear();
+    let currentDate = new Date();
+    let day = currentDate.getDate() - 1;
+    let month = currentDate.getMonth() + 1;
+    let year = currentDate.getFullYear();
     let todaysDate;
 
-    day < 10 ? (todaysDate = `${year}-${month}-${"0" + day}`) : (todaysDate = `${year}-${month}-${day}`);
-    month < 10 ? (todaysDate = `${year}-${"0" + month}-${day}`) : (todaysDate = `${year}-${month}-${day}`);
+    if (day < 10) {
+      day = "0" + day;
+    }
+    if (month < 10) {
+      month = "0" + month;
+    }
 
-    const today = new Date();
-    const fiveDaysAgo = new Date(today);
+    todaysDate = `${year}-${month}-${day}`;
+
+    let today = new Date();
+    let fiveDaysAgo = new Date(today);
     fiveDaysAgo.setDate(today.getDate() - 5);
 
-    const nday = fiveDaysAgo.getDate();
-    const nmonth = fiveDaysAgo.getMonth() + 1;
-    const nyear = fiveDaysAgo.getFullYear();
+    let nday = fiveDaysAgo.getDate();
+    let nmonth = fiveDaysAgo.getMonth() + 1;
+    let nyear = fiveDaysAgo.getFullYear();
 
     let nDate;
 
-    nday < 10 ? (nDate = `${nyear}-${nmonth}-${"0" + nday}`) : (nDate = `${nyear}-${nmonth}-${nday}`);
-    nmonth < 10 ? (nDate = `${nyear}-${"0" + nmonth}-${nday}`) : (nDate = `${nyear}-${nmonth}-${nday}`);
+    if (nday < 10) {
+      nday = "0" + nday;
+    }
+    if (nmonth < 10) {
+      nmonth = "0" + nmonth;
+    }
+
+    nDate = `${nyear}-${nmonth}-${nday}`;
+    console.log(todaysDate, "today", nDate, "ndate");
     return [nDate, todaysDate];
   }
 

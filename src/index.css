@@ -38,10 +38,13 @@ body {
   color: #ffc8dd;
   position: relative;
   top: 8%;
+  position: relative;
+  right: 40px;
 }
 
 .warning-section {
-  margin-left: .5%;
+  position: relative;
+  right: 2.5%;
 }
 
 .warning-text {
@@ -62,6 +65,7 @@ body {
   font-weight: bold;
   text-shadow: 3px 3px 9px black;
   font-size: 3rem;
+  padding-right: 6%;
 }
 
 .input-section {
@@ -105,10 +109,10 @@ body {
 }
 
 .ticker-search-button {
-  min-width: 38vw;
+  min-width: 40vw;
   min-height: 8vh;
   position: relative;
-  right: 3.3%;
+  right: 8.5%;
   border-radius: 5px;
   /* background-color: #a7c957; */
   background-color: #b388eb;
@@ -148,6 +152,9 @@ body {
   /* color: #a7c957; */
   color: #c05299;
   text-shadow: 2px 1px 1px black;
+  margin-bottom: 3%;
+  position: relative;
+  right: 2%;
 
 }
 
@@ -168,8 +175,9 @@ body {
   font-family: Rowdies;
   display: block;
   padding-top: 3%;
-  padding-left: 2%;
   font-size: 1.8rem;
+  position: relative;
+  left: 25px;
 }
 
 .filled-star {
@@ -192,7 +200,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 5%;
+  padding-right: 6%;
 
 }
 
@@ -205,6 +213,7 @@ body {
   font-style: italic;
   color: #8ecae6;
   text-shadow: 2px 2px 4px black;
+  
 }
 
 .generate-box-title {
@@ -279,6 +288,7 @@ body {
   right: 2%;
   margin-right: auto;
   margin-left: auto;
+  font-family: 'Rowdies';
 }
 
 .watch-link,
@@ -303,6 +313,10 @@ body {
   margin-top: 3%;
   margin-left: 6%;
   margin-right: 6%;
+}
+
+.watch-display {
+  font-family: 'Rowdies';
 }
 
 .entry-header {
