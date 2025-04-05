@@ -15,6 +15,9 @@ function App() {
   });
 
   const stockAPI = import.meta.env.VITE_STOCK_KEY;
+
+  console.log(openKey, "open key");
+  console.log(stockAPI, "stock key");
   const [firstLoad, isFirstLoad] = useState(true);
   const [stocks, setStocks] = useState([]);
   const [userInput, setUserInput] = useState("");
